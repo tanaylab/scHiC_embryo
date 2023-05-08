@@ -36,12 +36,12 @@ They contain two root directories - *data* and *metacell*, which contain data fi
 
 ### Configuration file
 You should then edit the following variables in *params.r*:
-*SCHIC.MISHA.PATH* - the path to the misha mm9 database. This database should include a track for each single Hi-C cell, as created using the scHi-C pipeline.
-*SHAMAN.MISHA.PATH* - a path to another misha database. This database will include tracks for pools of single cells (across cells in the same cluster), and the shaman score tracks. This can be the same as the previous mm9 database, and we allow different databases just for performance reasons.
-*ATAC.MISHA.PATH* - an mm10 misha database, used just for the ATAC analysis.
-*DATA.DIR* - path to the directory containing the preprocessed data files (the directory "data" in the preprocessed files).
-*FIGURE.DIR* - path to the directory where the figures will be saved.
-*EXPRESSION.MC.DIR* - path to the directory containing the preprocessed metacell files (the directory "metacell" in the preprocessed files)..
+*SCHIC.MISHA.PATH* - the path to the misha mm9 database. This database should include a track for each single Hi-C cell, as created using the scHi-C pipeline.  
+*SHAMAN.MISHA.PATH* - a path to another misha database. This database will include tracks for pools of single cells (across cells in the same cluster), and the shaman score tracks. This can be the same as the previous mm9 database, and we allow different databases just for performance reasons.  
+*ATAC.MISHA.PATH* - an mm10 misha database, used just for the ATAC analysis.  
+*DATA.DIR* - path to the directory containing the preprocessed data files (the directory "data" in the preprocessed files).  
+*FIGURE.DIR* - path to the directory where the figures will be saved.  
+*EXPRESSION.MC.DIR* - path to the directory containing the preprocessed metacell files (the directory "metacell" in the preprocessed files).  
 
 ### Additional misha tracks
 While not required for most analyses, there are several tracks that should exist in the *SCHIC.MISHA.PATH* database:
