@@ -55,23 +55,26 @@ ChIP tracks for h3k4me1 and h3k27me3 from ENCDOE of 5 different tissues. The tra
 *initial_clustering* - this directory contains several files with functions used for the initial analysis of the data - the clustering into C1-3.  
 *initial_hic_clustering.r* - this is the script which uses the functions in *initial_clustering*.  
 *create_figs.r* - contains function to load data (*load.decay.metrics* and *load.ab.and.cov*) which should be called before other functions are called, and *create_figs* which creates most of figures 1-4 and their corresponding EDFs.  
-*esc_analysis.r*  
-*ery_analysis.r*  
+*esc_analysis.r* - the analysis comparing the embryo-proper cells to the ESCs (mostly figure 1).    
+*ery_analysis.r* - the analysis comparing the embryo-proper cells to the pErys (mostly figure 2).  
 
-*method_comparison.r*  
-*repl_model_fit.r*  
-*repl_model.r*  
-*repl_model_validation.r*  
+Files relating to the replication model and its application on the embryo-proper cells:
+*repl_model_fit.r* - the core code for optimizing the replication model.  
+*repl_model_validation.r* - code for validation of the replication model - simulations and cross validation to choose meta parameters.  
+*method_comparison.r* - code for calling other methods for the analysis of scHi-C data for comparison with the replication model. 
+*repl_model.r* - code that is used to actually apply the replication model in our data - all kinds of wrappers before calling functions from *repl_model_fit.r*. Includes *repl.model.analysis*, which runs the analysis involving the replication until the classification of additional cells into C2.1 and C2.3 (figure 3).   
 
-*emb_proper_analysis.r*  
 
-*epigenetic_analysis.r*  
+*emb_proper_analysis.r* - code for analyzing the embryo-proper clusters, starting with the classification of additional cells into C2.1 and C2.3 (more of figure 3).   
 
+*epigenetic_analysis.r* - code for the analysis of the C2.1 and C2.3 clusters together with histone modifications data (figure 4).
+
+Next are some utility files:  
 *pooled_hic_plots.r*, *hic_plots.r* - functions to plot Hi-C matrices.  
 *utils.r* - different util functions.  
-*track_creation.r*  
-*params.r*  
+*track_creation.r* - code to create misha tracks for pools of cells used in the analysis. These functions are not called by the various scripts, so in order to recreate all results you should call these functions manually to create these misha tracks if needed.  
+*params.r* - configuration file. See instructions above about the variables that should be edited in this file.
 
-*atac* - this directory contains the code for the ATAC analysis. pipe.r contains the main script.  
+*atac* - this directory contains the code for the ATAC analysis (figure 5). *pipe.r* contains the main script.  
 
 
