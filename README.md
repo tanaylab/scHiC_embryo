@@ -30,8 +30,8 @@ Our analysis was performed on the mm9 reference, except for the ATAC analysis wh
 Most users will prefer to use preprocessed files we provide, instead of downloading the raw data, setting up misha databases, and running the scHi-C pipeline.  
 Note that some analyses still require the raw data, and have no preprocessed files that aid in their execution.
 
-The preprocessed files can be found here:
-TODO  
+The preprocessed files can be found here:  
+https://schic-embryo.s3.eu-west-1.amazonaws.com/schice9.tar.gz  
 They contain two root directories - *data* and *metacell*, which contain data files and the *metacell* database directory. These directories will be referenced in the *params.r* file. 
 
 ### Configuration file
@@ -50,6 +50,10 @@ Hi-C tracks for the single-cells: for the E9.5 data, and the E10.5 pEry confirma
 ChIP tracks for tal1 and gata1, called *tal1_bigwig* and *gata1_bigwig*.  
 Hi-C tracks for the E14.5 HSC and HPC data (called *hic.SC.bonev_npc.NPC_Bonev* and *hic.SC.chen_hsc.HSC_HSC*).  
 ChIP tracks for h3k4me1 and h3k27me3 from ENCDOE of 5 different tissues. The track names are *ENCODE.bing_ren.e10_5.X.h3k4me1_rep1* and *ENCODE.bing_ren.e10_5.X.h3k27me3_sum*, where X is one of forebrain, heart, hindbrain, limb and midbrain.  
+
+### Dependencies
+Used libraries can be seen in the beginning of all code files. Almost all of them are commonly used R libaries. The exceptions are a few libraries developed by our lab. These are:
+*metacell* - we use here the original version of metacell (metacell-2 was released 
 
 ### Brief explanation of the code files
 *initial_clustering* - this directory contains several files with functions used for the initial analysis of the data - the clustering into C1-3.  
