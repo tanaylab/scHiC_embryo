@@ -42,6 +42,7 @@ You should then edit the following variables in *params.r*:
 *DATA.DIR* - path to the directory containing the preprocessed data files (the directory "data" in the preprocessed files).  
 *FIGURE.DIR* - path to the directory where the figures will be saved.  
 *EXPRESSION.MC.DIR* - path to the directory containing the preprocessed metacell files (the directory "metacell" in the preprocessed files).  
+*TMP.CREATE.TRACK.DIR* - temporary directory which *shaman* uses for calculations.  
 
 ### Additional misha tracks
 While not required for most analyses, there are several tracks that should exist in the *SCHIC.MISHA.PATH* database:
