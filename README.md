@@ -11,6 +11,7 @@ Note that for most of the cases, you can skip directly to step 3, as for most an
 
 ## Downloading the data
 The raw Hi-C data for the project can be found in https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE148793.
+
 Please download the data using run ids, rather than sample ids, e.g:
 fasterq-dump -O /path/to/download SRR24224552
 
@@ -28,6 +29,8 @@ Our analysis was performed on the mm9 reference, except for the ATAC analysis wh
 ## Running the code in this repository
 Most users will prefer to use processed files we provide, instead of downloading the raw data, setting up misha databases, and running the scHi-C pipeline.
 Note that some analyses still require the raw data, and have no processed files that aid in their execution.
+
 The processed files can be found here:
 TODO
+
 Please download and extract the processed files. You should then edit the params.r file
