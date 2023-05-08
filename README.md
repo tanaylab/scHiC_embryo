@@ -52,8 +52,12 @@ Hi-C tracks for the E14.5 HSC and HPC data (called *hic.SC.bonev_npc.NPC_Bonev* 
 ChIP tracks for h3k4me1 and h3k27me3 from ENCDOE of 5 different tissues. The track names are *ENCODE.bing_ren.e10_5.X.h3k4me1_rep1* and *ENCODE.bing_ren.e10_5.X.h3k27me3_sum*, where X is one of forebrain, heart, hindbrain, limb and midbrain.  
 
 ### Dependencies
-Used libraries can be seen in the beginning of all code files. Almost all of them are commonly used R libaries. The exceptions are a few libraries developed by our lab. These are:
-*metacell* - we use here the original version of metacell (metacell-2 was released 
+Used libraries can be seen in the beginning of all code files. Almost all of them are commonly used R libaries. The exceptions are a few libraries developed by our lab. These are:  
+*tgconfig* - a utility package used in our lab. Can be found here: https://github.com/tanaylab/tgconfig  
+*metacell* - we use here the original version of metacell (metacell-2 was released since, but here we use metacell 1). It can be found here: https://github.com/tanaylab/metacell  
+*misha* - was described previously.  
+*shaman* - the tool to calculate enrichment of Hi-C contacts in a region. Can be found here: https://github.com/tanaylab/shaman  
+
 
 ### Brief explanation of the code files
 *initial_clustering* - this directory contains several files with functions used for the initial analysis of the data - the clustering into C1-3.  
